@@ -17,7 +17,7 @@ class ApiService {
     }
   }
 
-  // --- SHOP / SELLER REGISTRATION ---
+  // --- SHOP / SELLER REGISTRATION --- lu gia khang
   static Future<User?> requestShop(int userId, String shopName, String shopAddress) async {
     final response = await http.post(
       Uri.parse('$baseUrl/users/$userId/request-shop'),
